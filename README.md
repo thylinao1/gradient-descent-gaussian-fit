@@ -20,29 +20,11 @@ To **fit a Gaussian model** to empirical data (heights) by minimizing the differ
 
 ### 🧩 Core Concepts Implemented
 
-1. **Gaussian Probability Density Function (PDF):**
-   [
-   f(x;\mu,\sigma) = \frac{1}{\sqrt{2\pi},\sigma} \exp!\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
-   ]
-
-2. **Analytic Derivatives:**
-   Computed (\partial f / \partial \mu) and (\partial f / \partial \sigma) by hand to guide optimization.
-
+1. **Gaussian Probability Density Function (PDF)**
+2. **Analytic Derivatives**
 3. **Chi-Squared Objective Function:**
-   [
-   \chi^2 = \sum_i (y_i - f(x_i;\mu,\sigma))^2
-   ]
-   Measures how well the model fits the data.
-
 4. **Steepest Descent Algorithm:**
-   Iteratively updates parameters in the direction of the negative gradient:
-   [
-   [\mu, \sigma] \leftarrow [\mu, \sigma] - \text{learning rate} \times \nabla \chi^2
-   ]
-
 5. **Parameter Path Visualization:**
-   Tracks the optimization journey in ((\mu, \sigma))-space and visualizes convergence.
-
 ---
 
 ### 🧮 Technologies Used
